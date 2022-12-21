@@ -51,6 +51,7 @@
                 "ekino/phpstan-banned-code",
                 "ergebnis/phpstan-rules",
                 "infection/infection",
+                "mikey179/vfsstream",
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
                 "phparkitect/phparkitect",
