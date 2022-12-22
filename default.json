@@ -60,7 +60,8 @@
                 "qossmic/deptrac-shim",
                 "rector/rector",
                 "staabm/phpstan-dba",
-                "thecodingmachine/phpstan-safe-rule"
+                "thecodingmachine/phpstan-safe-rule",
+                "vimeo/psalm"
             ],
             "matchPackagePatterns": ["phpstan/*"],
             "rangeStrategy": "bump",
