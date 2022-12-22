@@ -45,6 +45,7 @@
             "matchDepTypes": ["require-dev"],
             "enabled": true,
             "matchPackageNames": [
+                "amphp/phpunit-util",
                 "behat/behat",
                 "friends-of-behat/symfony-extension",
                 "friendsofphp/php-cs-fixer",
