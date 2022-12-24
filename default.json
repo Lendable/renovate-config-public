@@ -63,7 +63,10 @@
                 "thecodingmachine/phpstan-safe-rule",
                 "vimeo/psalm"
             ],
-            "matchPackagePatterns": ["phpstan/*"],
+            "matchPackagePatterns": [
+                "phpstan/*",
+                "psalm/*"
+            ],
             "rangeStrategy": "bump",
             "groupName": "Composer dev tooling dependencies",
             "groupSlug": "composer-dev-tooling"
