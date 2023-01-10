@@ -59,6 +59,7 @@
                 "phpunit/phpunit",
                 "qossmic/deptrac-shim",
                 "rector/rector",
+                "roave/infection-static-analysis-plugin",
                 "staabm/phpstan-dba",
                 "thecodingmachine/phpstan-safe-rule",
                 "vimeo/psalm"
