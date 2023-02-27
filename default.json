@@ -50,6 +50,7 @@
                 "friends-of-behat/symfony-extension",
                 "friendsofphp/php-cs-fixer",
                 "ekino/phpstan-banned-code",
+                "ergebnis/composer-normalize",
                 "ergebnis/phpstan-rules",
                 "infection/infection",
                 "mikey179/vfsstream",
