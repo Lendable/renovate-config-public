@@ -53,6 +53,7 @@
                 "ergebnis/composer-normalize",
                 "ergebnis/phpstan-rules",
                 "infection/infection",
+                "lendable/composer-license-checker",
                 "mikey179/vfsstream",
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
