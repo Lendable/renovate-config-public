@@ -115,6 +115,11 @@
             "enabled": true,
             "groupName": "Pyenv dependencies",
             "groupSlug": "pyenv"
+        },
+        {   "matchManagers": ["pip_requirements"],
+            "enabled": true,
+            "groupName": "pip dependencies",
+            "groupSlug": "pip"
         }
     ]
 }
