@@ -24,7 +24,8 @@
         {
             "matchManagers": ["docker-compose", "dockerfile"],
             "enabled": true,
-            "groupName": "docker"
+            "groupName": "docker",
+            "rangeStrategy": "bump"
         },
         {
             "matchManagers": ["composer"],
