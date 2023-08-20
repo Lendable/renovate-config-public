@@ -105,7 +105,8 @@
             "matchManagers": ["github-actions"],
             "enabled": true,
             "groupName": "GitHub Actions dependencies",
-            "groupSlug": "github-actions"
+            "groupSlug": "github-actions",
+            "rangeStrategy": "bump"
         },
         {
             "matchManagers": ["poetry"],
