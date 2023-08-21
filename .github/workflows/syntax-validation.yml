@@ -2,13 +2,9 @@ name: "Syntax validation"
 
 on:
   pull_request:
-      paths:
-        - "**.json"
   push:
     branches:
       - "main"
-    paths:
-      - "**.json"
 
 jobs:
   validate:
@@ -18,7 +14,10 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@v3"
 
-      - name: "Validate JSON syntax"
-        uses: limitusus/json-syntax-check@v1
-        with:
-          pattern: "\\.json$"
+      - name: "Check JSON syntax"
+        run: find . -type f -name '*.json' -exec sh -c 'cat "$1" | jq > /dev/null || echo "$1"' -- {} \; &> json.out
+
+      - name: "Assert JSON syntax"
+        run: |
+          OUT=`cat json.out`
+          [ -z "$OUT"] && exit 0 || (echo $OUT && exit 1)
