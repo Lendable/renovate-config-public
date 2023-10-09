@@ -144,6 +144,17 @@
             "matchPackageNames": ["composer/composer"],
             "enabled": true,
             "rangeStrategy": "bump"
+        },
+        {
+            "matchDatasources": ["docker"],
+            "matchPackageNames": [
+                "bitnami/mysql",
+                "mysql",
+                "php",
+                "postgres"
+            ],
+            "matchUpdateTypes": ["major", "minor"],
+            "enabled": false
         }
     ]
 }
