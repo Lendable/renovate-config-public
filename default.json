@@ -156,6 +156,8 @@
                 "public.ecr.aws/docker/library/node",
                 "php",
                 "public.ecr.aws/docker/library/php",
+                "lendableuk/php-fpm-alpine",
+                "lendableuk/php-cli-alpine",
                 "postgres",
                 "public.ecr.aws/docker/library/postgres"
             ],
