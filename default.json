@@ -69,6 +69,7 @@
                 "infection/infection",
                 "kubawerlos/php-cs-fixer-custom-fixers",
                 "lendable/composer-license-checker",
+                "matthiasnoback/symfony-config-test",
                 "mikey179/vfsstream",
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
