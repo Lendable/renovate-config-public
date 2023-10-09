@@ -16,6 +16,19 @@
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
     "rebaseWhen": "conflicted",
+    "customManagers": [
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "run:\\s+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.+--filename=composer\\s+--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+            ],
+            "depNameTemplate": "composer/composer",
+            "datasourceTemplate": "github-releases"
+        }
+    ],
     "packageRules": [
         {
             "matchPackagePatterns": ["*"],
@@ -125,6 +138,12 @@
             "enabled": true,
             "groupName": "pip dependencies",
             "groupSlug": "pip"
+        },
+        {
+            "matchDatasources": ["github-releases"],
+            "matchPackageNames": ["composer/composer"],
+            "enabled": true,
+            "rangeStrategy": "bump"
         }
     ]
 }
