@@ -149,9 +149,12 @@
         {
             "matchDatasources": ["docker"],
             "matchPackageNames": [
+                "alpine",
+                "golang",
                 "bitnami/mysql",
                 "mysql",
                 "public.ecr.aws/docker/library/mysql",
+                "nginx",
                 "node",
                 "public.ecr.aws/docker/library/node",
                 "php",
@@ -159,7 +162,10 @@
                 "lendableuk/php-fpm-alpine",
                 "lendableuk/php-cli-alpine",
                 "postgres",
-                "public.ecr.aws/docker/library/postgres"
+                "public.ecr.aws/docker/library/postgres",
+                "rabbitmq",
+                "thecodingmachine/gotenberg",
+                "traefik"
             ],
             "matchUpdateTypes": ["major", "minor"],
             "enabled": false
