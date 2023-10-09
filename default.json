@@ -150,8 +150,11 @@
             "matchPackageNames": [
                 "bitnami/mysql",
                 "mysql",
+                "public.ecr.aws/docker/library/mysql",
                 "php",
-                "postgres"
+                "public.ecr.aws/docker/library/php",
+                "postgres",
+                "public.ecr.aws/docker/library/postgres"
             ],
             "matchUpdateTypes": ["major", "minor"],
             "enabled": false
