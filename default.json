@@ -151,6 +151,8 @@
                 "bitnami/mysql",
                 "mysql",
                 "public.ecr.aws/docker/library/mysql",
+                "node",
+                "public.ecr.aws/docker/library/node",
                 "php",
                 "public.ecr.aws/docker/library/php",
                 "postgres",
