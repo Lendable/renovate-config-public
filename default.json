@@ -61,6 +61,7 @@
             "matchPackageNames": [
                 "amphp/phpunit-util",
                 "behat/behat",
+                "friends-of-behat/mink-extension",
                 "friends-of-behat/symfony-extension",
                 "friendsofphp/php-cs-fixer",
                 "ekino/phpstan-banned-code",
