@@ -165,6 +165,7 @@
                 "postgres",
                 "public.ecr.aws/docker/library/postgres",
                 "rabbitmq",
+                "public.ecr.aws/docker/library/rabbitmq",
                 "thecodingmachine/gotenberg",
                 "traefik"
             ],
