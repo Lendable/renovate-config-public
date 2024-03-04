@@ -72,6 +72,7 @@
                 "lendable/composer-license-checker",
                 "maglnet/composer-require-checker",
                 "matthiasnoback/symfony-config-test",
+                "matthiasnoback/symfony-dependency-injection-test",
                 "mikey179/vfsstream",
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
