@@ -58,7 +58,7 @@
             "matchManagers": ["composer"],
             "matchDepTypes": ["require-dev"],
             "enabled": true,
-            "matchPackageNames": [
+            "matchDepNames": [
                 "amphp/phpunit-util",
                 "behat/behat",
                 "friends-of-behat/mink-extension",
@@ -96,7 +96,7 @@
         },
         {
             "matchManagers": ["composer"],
-            "matchPackageNames": ["datadog/dd-trace"],
+            "matchDepNames": ["datadog/dd-trace"],
             "enabled": false
         },
         {
@@ -146,13 +146,13 @@
         },
         {
             "matchDatasources": ["github-releases"],
-            "matchPackageNames": ["composer/composer"],
+            "matchDepNames": ["composer/composer"],
             "enabled": true,
             "rangeStrategy": "bump"
         },
         {
             "matchDatasources": ["docker"],
-            "matchPackageNames": [
+            "matchDepNames": [
                 "alpine",
                 "golang",
                 "bitnami/mysql",
