@@ -81,6 +81,7 @@
                 "infection/infection",
                 "kubawerlos/php-cs-fixer-custom-fixers",
                 "lendable/composer-license-checker",
+                "lendable/phpunit-extensions",
                 "maglnet/composer-require-checker",
                 "matthiasnoback/symfony-config-test",
                 "matthiasnoback/symfony-dependency-injection-test",
