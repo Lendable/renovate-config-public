@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:base",
         ":enableVulnerabilityAlerts",
@@ -20,21 +21,11 @@
         {
             "customType": "regex",
             "fileMatch": [
-                "^.github/(?:workflows|actions)/.+\\.ya?ml$"
-            ],
-            "matchStrings": [
-                "run:\\s+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.+--filename=composer\\s+--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
-            ],
-            "depNameTemplate": "composer/composer",
-            "datasourceTemplate": "github-releases"
-        },
-        {
-            "customType": "regex",
-            "fileMatch": [
+                "^.github/(?:workflows|actions)/.+\\.ya?ml$",
                 "^Dockerfile"
             ],
             "matchStrings": [
-                "RUN\\s+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.+--filename=composer\\s+--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+                "^.+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.*--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s$"
             ],
             "depNameTemplate": "composer/composer",
             "datasourceTemplate": "github-releases"
