@@ -38,6 +38,19 @@
             ],
             "depNameTemplate": "composer/composer",
             "datasourceTemplate": "github-releases"
+        },
+        {
+            "fileMatch": [
+                "^.+\\.md$",
+                "^Dockerfile",
+                "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+            ],
+            "customType": "regex",
+            "matchStrings": [
+                ".+https:\\/\\/github\\.com\\/DataDog\\/dd-trace-php\\/releases\\/download\\/(?<currentValue>.+?)\\/datadog-setup\\.php.+"
+            ],
+            "depNameTemplate": "datadog/dd-trace-php",
+            "datasourceTemplate": "github-releases"
         }
     ],
     "packageRules": [
@@ -107,9 +120,11 @@
             "groupSlug": "composer-dev-tooling"
         },
         {
-            "matchManagers": ["composer"],
-            "matchDepNames": ["datadog/dd-trace"],
-            "enabled": false
+            "matchManagers": ["composer", "regex"],
+            "matchDepNames": ["datadog/dd-trace", "datadog/dd-trace-php"],
+            "groupName": "DataDog PHP Tracer",
+            "groupSlug": "dd-trace-php",
+            "rangeStrategy": "pin"
         },
         {
             "matchManagers": ["composer"],
