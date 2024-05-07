@@ -31,7 +31,7 @@
         {
             "customType": "regex",
             "fileMatch": [
-                "^Dockerfile$"
+                "^Dockerfile"
             ],
             "matchStrings": [
                 "RUN\\s+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.+--filename=composer\\s+--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
