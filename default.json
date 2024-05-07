@@ -38,7 +38,8 @@
             ],
             "customType": "regex",
             "matchStrings": [
-                ".+https:\\/\\/github\\.com\\/DataDog\\/dd-trace-php\\/releases\\/download\\/(?<currentValue>.+?)\\/datadog-setup\\.php.+"
+                ".+https:\\/\\/github\\.com\\/DataDog\\/dd-trace-php\\/releases\\/download\\/(?<currentValue>.+?)\\/datadog-setup\\.php.+",
+                "^ARG DD_VERSION=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s$"
             ],
             "depNameTemplate": "datadog/dd-trace-php",
             "datasourceTemplate": "github-releases"
