@@ -124,7 +124,8 @@
             "matchDepNames": ["datadog/dd-trace", "datadog/dd-trace-php"],
             "groupName": "DataDog PHP Tracer",
             "groupSlug": "dd-trace-php",
-            "rangeStrategy": "pin"
+            "rangeStrategy": "pin",
+            "enabled": true
         },
         {
             "matchManagers": ["composer"],
