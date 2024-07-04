@@ -25,7 +25,7 @@
                 "^Dockerfile"
             ],
             "matchStrings": [
-                "^.+curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.*--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s$"
+                "curl\\s+-sS\\s+https:\\/\\/getcomposer\\.org\\/installer\\s+\\|\\s+php\\s+--\\s+.*--version=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
             ],
             "depNameTemplate": "composer/composer",
             "datasourceTemplate": "github-releases"
