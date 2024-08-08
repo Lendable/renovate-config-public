@@ -190,6 +190,8 @@
                 "public.ecr.aws/docker/library/postgres",
                 "rabbitmq",
                 "public.ecr.aws/docker/library/rabbitmq",
+                "redis",
+                "public.ecr.aws/docker/library/redis",
                 "thecodingmachine/gotenberg",
                 "traefik"
             ],
