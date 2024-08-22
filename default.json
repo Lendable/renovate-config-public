@@ -17,6 +17,13 @@
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
     "rebaseWhen": "conflicted",
+    "hostRules": [
+        {
+          "hostType": "npm",
+          "matchHost": "https://jfrog.shared.prod.zable.co.uk/artifactory/api/npm/npm",
+          "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
+        }
+    ],
     "customManagers": [
         {
             "customType": "regex",
