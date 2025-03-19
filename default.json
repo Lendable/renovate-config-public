@@ -5,7 +5,8 @@
         ":enableVulnerabilityAlerts",
         ":semanticCommitsDisabled",
         ":prHourlyLimitNone",
-        ":prImmediately"
+        ":prImmediately",
+        "helpers:pinGitHubActionDigests"
     ],
     "automerge": true,
     "automergeStrategy": "squash",
