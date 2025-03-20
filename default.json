@@ -187,6 +187,7 @@
             "matchManagers": ["github-actions"],
             "enabled": true,
             "minimumReleaseAge": "3 days",
+            "internalChecksFilter": "strict",
             "groupName": "GitHub Actions dependencies",
             "groupSlug": "github-actions",
             "rangeStrategy": "bump"
@@ -195,7 +196,6 @@
             "matchManagers": ["github-actions"],
             "matchPackagePatterns": ["^lendable/", "^Lendable/"],
             "enabled": true,
-            "minimumReleaseAge": "1 day",
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions",
             "rangeStrategy": "bump"
