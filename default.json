@@ -194,7 +194,7 @@
         },
         {
             "matchManagers": ["github-actions"],
-            "matchPackagePatterns": ["^lendable/", "^Lendable/"],
+            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
             "enabled": true,
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions",
