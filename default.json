@@ -201,6 +201,11 @@
             "rangeStrategy": "bump"
         },
         {
+            "matchDepTypes": ["action"],
+            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
+            "pinDigests": false
+        },
+        {
             "matchManagers": ["poetry"],
             "enabled": true,
             "groupName": "Poetry dependencies",
