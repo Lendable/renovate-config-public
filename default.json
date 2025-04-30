@@ -199,7 +199,8 @@
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions",
             "rangeStrategy": "bump",
-            "internalChecksFilter": "none"
+            "internalChecksFilter": "none",
+            "minimumReleaseAge": "0"
         },
         {
             "matchDepTypes": ["action"],
