@@ -188,7 +188,6 @@
             "matchDepTypes": ["golang"],
             "groupName": "Go dependencies",
             "groupSlug": "go",
-            "rangeStrategy": "bump",
             "enabled": true
         },
         {
