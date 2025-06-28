@@ -143,9 +143,9 @@
         },
         {
             "matchManagers": ["gomod"],
-            "matchDepTypes": ["golang"],
             "groupName": "Go dependencies",
             "groupSlug": "go",
+            "postUpdateOptions": ["gomodTidy"],
             "enabled": true
         },
         {
