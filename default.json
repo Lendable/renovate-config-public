@@ -226,7 +226,6 @@
         {
             "matchManagers": ["gradle"],
             "enabled": true,
-            "registryUrls": ["https://jfrog.shared.prod.zable.co.uk/artifactory/maven", "https://plugins.gradle.org/m2"],
             "groupName": "Gradle",
             "groupSlug": "gradle",
             "rangeStrategy": "bump"
