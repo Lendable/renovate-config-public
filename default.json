@@ -8,6 +8,10 @@
         ":prImmediately",
         "helpers:pinGitHubActionDigests"
     ],
+    "minimumReleaseAge": "7 days",
+    "labels": [
+        "renovate"
+    ],
     "automerge": true,
     "automergeStrategy": "squash",
     "automergeType": "pr",
