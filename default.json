@@ -8,7 +8,6 @@
         ":prImmediately",
         "helpers:pinGitHubActionDigests"
     ],
-    "enabled": false,
     "minimumReleaseAge": "7 days",
     "labels": [
         "renovate"
