@@ -17,7 +17,8 @@
     "automergeType": "pr",
     "lockFileMaintenance": {
         "enabled": true,
-        "schedule": "before 11am every day"
+        "schedule": "before 11am every day",
+        "minimumReleaseAge": "7 days"
     },
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
