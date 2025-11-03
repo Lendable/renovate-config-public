@@ -17,7 +17,8 @@
     "automergeType": "pr",
     "lockFileMaintenance": {
         "enabled": true,
-        "schedule": "before 11am every day"
+        "schedule": "before 11am every day",
+        "minimumReleaseAge": "7 days"
     },
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
@@ -53,32 +54,49 @@
     ],
     "packageRules": [
         {
-            "matchPackagePatterns": ["*"],
+            "matchPackagePatterns": [
+                "*"
+            ],
             "enabled": false
         },
         {
-            "matchManagers": ["docker-compose", "dockerfile"],
+            "matchManagers": [
+                "docker-compose",
+                "dockerfile"
+            ],
             "enabled": true,
             "groupName": "docker",
             "rangeStrategy": "bump"
         },
         {
-            "matchManagers": ["composer"],
-            "matchDepTypes": ["require"],
+            "matchManagers": [
+                "composer"
+            ],
+            "matchDepTypes": [
+                "require"
+            ],
             "enabled": true,
             "groupName": "Composer runtime dependencies",
             "groupSlug": "composer-runtime"
         },
         {
-            "matchManagers": ["composer"],
-            "matchDepTypes": ["require-dev"],
+            "matchManagers": [
+                "composer"
+            ],
+            "matchDepTypes": [
+                "require-dev"
+            ],
             "enabled": true,
             "groupName": "Composer dev dependencies",
             "groupSlug": "composer-dev"
         },
         {
-            "matchManagers": ["composer"],
-            "matchDepTypes": ["require-dev"],
+            "matchManagers": [
+                "composer"
+            ],
+            "matchDepTypes": [
+                "require-dev"
+            ],
             "enabled": true,
             "matchDepNames": [
                 "amphp/phpunit-util",
@@ -118,42 +136,68 @@
             "groupSlug": "composer-dev-tooling"
         },
         {
-            "matchManagers": ["composer", "regex"],
-            "matchDepNames": ["datadog/dd-trace", "datadog/dd-trace-php"],
+            "matchManagers": [
+                "composer",
+                "regex"
+            ],
+            "matchDepNames": [
+                "datadog/dd-trace",
+                "datadog/dd-trace-php"
+            ],
             "groupName": "DataDog PHP Tracer",
             "groupSlug": "dd-trace-php",
             "rangeStrategy": "pin",
             "enabled": true
         },
         {
-            "matchManagers": ["composer"],
-            "matchPackagePatterns": ["symfony/*"],
-            "matchUpdateTypes": ["minor"],
+            "matchManagers": [
+                "composer"
+            ],
+            "matchPackagePatterns": [
+                "symfony/*"
+            ],
+            "matchUpdateTypes": [
+                "minor"
+            ],
             "enabled": false
         },
         {
-            "matchManagers": ["npm"],
-            "matchDepTypes": ["dependencies"],
+            "matchManagers": [
+                "npm"
+            ],
+            "matchDepTypes": [
+                "dependencies"
+            ],
             "groupName": "npm runtime dependencies",
             "groupSlug": "npm-runtime",
             "enabled": true
         },
         {
-            "matchManagers": ["npm"],
-            "matchDepTypes": ["devDependencies"],
+            "matchManagers": [
+                "npm"
+            ],
+            "matchDepTypes": [
+                "devDependencies"
+            ],
             "groupName": "npm dev dependencies",
             "groupSlug": "npm-dev",
             "enabled": true
         },
         {
-            "matchManagers": ["gomod"],
+            "matchManagers": [
+                "gomod"
+            ],
             "groupName": "Go dependencies",
             "groupSlug": "go",
-            "postUpdateOptions": ["gomodTidy"],
+            "postUpdateOptions": [
+                "gomodTidy"
+            ],
             "enabled": true
         },
         {
-            "matchManagers": ["github-actions"],
+            "matchManagers": [
+                "github-actions"
+            ],
             "enabled": true,
             "minimumReleaseAge": "3 days",
             "internalChecksFilter": "strict",
@@ -162,8 +206,13 @@
             "rangeStrategy": "bump"
         },
         {
-            "matchManagers": ["github-actions"],
-            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
+            "matchManagers": [
+                "github-actions"
+            ],
+            "matchPackagePatterns": [
+                "lendable/*",
+                "Lendable/*"
+            ],
             "enabled": true,
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions",
@@ -172,36 +221,53 @@
             "minimumReleaseAge": "0"
         },
         {
-            "matchDepTypes": ["action"],
-            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
+            "matchDepTypes": [
+                "action"
+            ],
+            "matchPackagePatterns": [
+                "lendable/*",
+                "Lendable/*"
+            ],
             "pinDigests": false
         },
         {
-            "matchManagers": ["poetry"],
+            "matchManagers": [
+                "poetry"
+            ],
             "enabled": true,
             "groupName": "Poetry dependencies",
             "groupSlug": "poetry"
         },
         {
-            "matchManagers": ["pyenv"],
+            "matchManagers": [
+                "pyenv"
+            ],
             "enabled": true,
             "groupName": "Pyenv dependencies",
             "groupSlug": "pyenv"
         },
         {
-            "matchManagers": ["pip_requirements"],
+            "matchManagers": [
+                "pip_requirements"
+            ],
             "enabled": true,
             "groupName": "pip dependencies",
             "groupSlug": "pip"
         },
         {
-            "matchDatasources": ["github-releases"],
-            "matchDepNames": ["composer/composer"],
+            "matchDatasources": [
+                "github-releases"
+            ],
+            "matchDepNames": [
+                "composer/composer"
+            ],
             "enabled": true,
             "rangeStrategy": "bump"
         },
         {
-            "matchDatasources": ["docker"],
+            "matchDatasources": [
+                "docker"
+            ],
             "matchDepNames": [
                 "alpine",
                 "golang",
@@ -224,18 +290,25 @@
                 "thecodingmachine/gotenberg",
                 "traefik"
             ],
-            "matchUpdateTypes": ["major", "minor"],
+            "matchUpdateTypes": [
+                "major",
+                "minor"
+            ],
             "enabled": false
         },
         {
-            "matchManagers": ["gradle"],
+            "matchManagers": [
+                "gradle"
+            ],
             "enabled": true,
             "groupName": "Gradle",
             "groupSlug": "gradle",
             "rangeStrategy": "bump"
         },
         {
-            "matchManagers": ["gradle-wrapper"],
+            "matchManagers": [
+                "gradle-wrapper"
+            ],
             "enabled": true,
             "rangeStrategy": "bump"
         }
