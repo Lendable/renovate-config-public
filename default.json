@@ -9,6 +9,7 @@
         "helpers:pinGitHubActionDigests"
     ],
     "minimumReleaseAge": "7 days",
+    "internalChecksFilter": "strict",
     "labels": [
         "renovate"
     ],
@@ -156,8 +157,6 @@
         {
             "matchManagers": ["github-actions"],
             "enabled": true,
-            "minimumReleaseAge": "3 days",
-            "internalChecksFilter": "strict",
             "groupName": "GitHub Actions dependencies",
             "groupSlug": "github-actions",
             "rangeStrategy": "bump"
