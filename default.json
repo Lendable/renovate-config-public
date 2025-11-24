@@ -10,6 +10,8 @@
     ],
     "minimumReleaseAge": "7 days",
     "internalChecksFilter": "strict",
+    "prCreation": "not-pending",
+    "dependencyDashboard": true,
     "labels": [
         "renovate"
     ],
@@ -18,8 +20,7 @@
     "automergeType": "pr",
     "lockFileMaintenance": {
         "enabled": true,
-        "schedule": "before 11am every day",
-        "minimumReleaseAge": "7 days"
+        "schedule": "before 11am every day"
     },
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
