@@ -4,10 +4,11 @@
         "config:base",
         ":enableVulnerabilityAlerts",
         ":semanticCommitsDisabled",
-        ":prHourlyLimitNone",
+        ":prHourlyLimit4",
         ":prImmediately",
         "helpers:pinGitHubActionDigests"
     ],
+    "prConcurrentLimit": 20,
     "minimumReleaseAge": "7 days",
     "internalChecksFilter": "strict",
     "prCreation": "not-pending",
