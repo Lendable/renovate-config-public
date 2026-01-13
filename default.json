@@ -25,7 +25,6 @@
         "minimumReleaseAge": null
     },
     "platformAutomerge": true,
-    "rangeStrategy": "in-range-only",
     "rebaseWhen": "conflicted",
     "customManagers": [
         {
