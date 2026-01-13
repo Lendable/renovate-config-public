@@ -68,6 +68,18 @@
             "rangeStrategy": "bump"
         },
         {
+            "matchManagers": ["docker-compose", "dockerfile"],
+            "matchDepNames": ["public.ecr.aws/*"],
+            "enabled": true,
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
+            "matchManagers": ["composer"],
+            "matchDepNames": ["lendable/*"],
+            "enabled": true,
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
             "matchManagers": ["composer"],
             "matchDepTypes": ["require"],
             "enabled": true,
