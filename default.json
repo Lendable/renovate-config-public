@@ -85,7 +85,7 @@
             "matchManagers": ["composer"],
             "matchDepTypes": ["require-dev"],
             "enabled": true,
-            "matchDepNames": [
+            "matchPackageNames": [
                 "amphp/phpunit-util",
                 "behat/behat",
                 "friends-of-behat/mink-extension",
@@ -112,11 +112,9 @@
                 "roave/infection-static-analysis-plugin",
                 "staabm/phpstan-dba",
                 "thecodingmachine/phpstan-safe-rule",
-                "vimeo/psalm"
-            ],
-            "matchPackagePatterns": [
-                "phpstan/*",
-                "psalm/*"
+                "vimeo/psalm",
+                "phpstan/**",
+                "psalm/**"
             ],
             "rangeStrategy": "bump",
             "groupName": "Composer dev tooling dependencies",
