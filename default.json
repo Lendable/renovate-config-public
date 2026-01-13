@@ -58,7 +58,7 @@
     ],
     "packageRules": [
         {
-            "matchPackagePatterns": ["*"],
+            "matchDepNames": ["*"],
             "enabled": false
         },
         {
@@ -105,7 +105,9 @@
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
                 "phparkitect/phparkitect",
+                "phpstan/*",
                 "phpunit/phpunit",
+                "psalm/*",
                 "qossmic/deptrac",
                 "qossmic/deptrac-shim",
                 "rector/rector",
@@ -113,10 +115,6 @@
                 "staabm/phpstan-dba",
                 "thecodingmachine/phpstan-safe-rule",
                 "vimeo/psalm"
-            ],
-            "matchPackagePatterns": [
-                "phpstan/*",
-                "psalm/*"
             ],
             "rangeStrategy": "bump",
             "groupName": "Composer dev tooling dependencies",
@@ -132,7 +130,7 @@
         },
         {
             "matchManagers": ["composer"],
-            "matchPackagePatterns": ["symfony/*"],
+            "matchDepNames": ["symfony/*"],
             "matchUpdateTypes": ["minor"],
             "enabled": false
         },
@@ -166,7 +164,7 @@
         },
         {
             "matchManagers": ["github-actions"],
-            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
+            "matchDepNames": ["lendable/*", "Lendable/*"],
             "enabled": true,
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions",
@@ -176,7 +174,7 @@
         },
         {
             "matchDepTypes": ["action"],
-            "matchPackagePatterns": ["lendable/*", "Lendable/*"],
+            "matchDepNames": ["lendable/*", "Lendable/*"],
             "pinDigests": false
         },
         {
