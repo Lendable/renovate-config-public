@@ -119,7 +119,7 @@
             "rangeStrategy": "bump",
             "groupName": "Composer dev tooling dependencies",
             "groupSlug": "composer-dev-tooling"
-        }
+        },
         {
             "matchManagers": ["composer", "regex"],
             "matchDepNames": ["datadog/dd-trace", "datadog/dd-trace-php"],
