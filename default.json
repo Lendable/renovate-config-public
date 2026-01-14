@@ -173,7 +173,7 @@
             "matchPackagePatterns": ["lendable/*", "Lendable/*"],
             "enabled": true,
             "groupName": "GitHub Actions Lendable dependencies",
-            "groupSlug": "github-actions",
+            "groupSlug": "github-actions-lendable",
             "rangeStrategy": "bump",
             "internalChecksFilter": "none",
             "minimumReleaseAge": "0"
