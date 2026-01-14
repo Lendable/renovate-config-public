@@ -69,6 +69,12 @@
         },
         {
             "matchManagers": ["composer"],
+            "matchDepNames": ["lendable/*"],
+            "enabled": true,
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
+            "matchManagers": ["composer"],
             "matchDepTypes": ["require"],
             "enabled": true,
             "groupName": "Composer runtime dependencies",
