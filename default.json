@@ -68,8 +68,8 @@
             "rangeStrategy": "bump"
         },
         {
-            "matchManagers": ["docker-compose", "dockerfile"],
-            "matchDepNames": ["public.ecr.aws/*"],
+            "matchDatasources": ["docker"],
+            "matchDepNames": ["public.ecr.aws/**", "*.dkr.ecr.*.amazonaws.com/**"],
             "enabled": true,
             "minimumReleaseAgeBehaviour": "timestamp-optional"
         },
