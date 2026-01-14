@@ -68,6 +68,12 @@
             "rangeStrategy": "bump"
         },
         {
+            "matchDatasources": ["docker"],
+            "matchDepNames": ["public.ecr.aws/**", "*.dkr.ecr.*.amazonaws.com/**"],
+            "enabled": true,
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
             "matchManagers": ["composer"],
             "matchDepNames": ["lendable/*"],
             "enabled": true,
