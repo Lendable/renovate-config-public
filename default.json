@@ -74,6 +74,12 @@
             "minimumReleaseAgeBehaviour": "timestamp-optional"
         },
         {
+            "matchManagers": ["github-actions"],
+            "matchUpdateTypes": ["digest"],
+            "enabled": true,
+            "minimumReleaseAgeBehaviour": "timestamp-optional"
+        },
+        {
             "matchManagers": ["composer"],
             "matchDepTypes": ["require"],
             "enabled": true,
