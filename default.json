@@ -9,7 +9,6 @@
         "helpers:pinGitHubActionDigests"
     ],
     "minimumReleaseAge": "7 days",
-    "internalChecksFilter": "strict",
     "prCreation": "not-pending",
     "dependencyDashboard": true,
     "labels": [
