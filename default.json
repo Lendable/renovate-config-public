@@ -9,7 +9,7 @@
         "helpers:pinGitHubActionDigests"
     ],
     "minimumReleaseAge": "7 days",
-    "prCreation": "not-pending",
+    "prCreation": "immediate",
     "dependencyDashboard": true,
     "labels": [
         "renovate"
