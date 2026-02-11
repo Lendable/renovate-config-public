@@ -19,6 +19,7 @@
     "automergeType": "pr",
     "lockFileMaintenance": {
         "enabled": true,
+        "schedule": ["* 0-10 1-7,15-21 * 2"],
         "minimumReleaseAge": null
     },
     "platformAutomerge": true,
