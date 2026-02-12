@@ -255,6 +255,12 @@
             "matchManagers": ["gradle-wrapper"],
             "enabled": true,
             "rangeStrategy": "bump"
+        },
+        {
+            "matchManagers": ["tflint-plugin"],
+            "enabled": true,
+            "groupName": "TFLint plugins",
+            "groupSlug": "tflint-plugins"
         }
     ]
 }
