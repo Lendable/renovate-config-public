@@ -260,7 +260,8 @@
             "matchManagers": ["tflint-plugin"],
             "enabled": true,
             "groupName": "TFLint plugins",
-            "groupSlug": "tflint-plugins"
+            "groupSlug": "tflint-plugins",
+            "rangeStrategy": "bump"
         }
     ]
 }
