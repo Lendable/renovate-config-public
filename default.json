@@ -194,6 +194,12 @@
             "pinDigests": false
         },
         {
+            "matchManagers": ["github-actions"],
+            "matchPackageNames": ["gradle/actions"],
+            "matchUpdateTypes": ["major"],
+            "enabled": false
+        },
+        {
             "matchManagers": ["poetry"],
             "enabled": true,
             "groupName": "Poetry dependencies",
