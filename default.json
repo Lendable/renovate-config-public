@@ -228,6 +228,8 @@
             "matchDepNames": [
                 "alpine",
                 "golang",
+                "bitnami/kafka",
+                "public.ecr.aws/bitnami/kafka",
                 "bitnami/mysql",
                 "mysql",
                 "public.ecr.aws/docker/library/mysql",
