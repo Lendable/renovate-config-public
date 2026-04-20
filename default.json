@@ -229,6 +229,7 @@
                 "alpine",
                 "golang",
                 "bitnami/kafka",
+                "bitnamilegacy/kafka",
                 "public.ecr.aws/bitnami/kafka",
                 "bitnami/mysql",
                 "mysql",
