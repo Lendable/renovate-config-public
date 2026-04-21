@@ -169,6 +169,7 @@
             "groupName": "Go dependencies",
             "groupSlug": "go",
             "postUpdateOptions": ["gomodTidy"],
+            "rangeStrategy": "bump",
             "enabled": true
         },
         {
