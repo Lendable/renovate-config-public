@@ -121,6 +121,7 @@
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
                 "phparkitect/phparkitect",
+                "phpunit/phpcov",
                 "phpunit/phpunit",
                 "qossmic/deptrac",
                 "qossmic/deptrac-shim",
