@@ -234,6 +234,8 @@
                 "bitnamilegacy/kafka",
                 "public.ecr.aws/bitnami/kafka",
                 "bitnami/mysql",
+                "confluentinc/cp-ksqldb-cli",
+                "confluentinc/cp-ksqldb-server",
                 "mysql",
                 "public.ecr.aws/docker/library/mysql",
                 "nginx",
