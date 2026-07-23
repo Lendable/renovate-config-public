@@ -184,6 +184,7 @@
             "matchManagers": ["github-actions"],
             "matchPackagePatterns": ["lendable/*", "Lendable/*"],
             "enabled": true,
+            "pinDigests": false,
             "groupName": "GitHub Actions Lendable dependencies",
             "groupSlug": "github-actions-lendable",
             "rangeStrategy": "bump",
