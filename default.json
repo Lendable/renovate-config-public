@@ -265,6 +265,23 @@
             "rangeStrategy": "bump"
         },
         {
+            "matchManagers": ["gradle"],
+            "matchPackageNames": [
+                "zable:**",
+                "zable.**",
+                "co.uk.zable:**",
+                "co.uk.zable.**",
+                "co.uk.lendable:**",
+                "co.uk.lendable.**"
+            ],
+            "enabled": true,
+            "minimumReleaseAge": "0",
+            "internalChecksFilter": "none",
+            "groupName": "Gradle Lendable dependencies",
+            "groupSlug": "gradle-lendable",
+            "rangeStrategy": "bump"
+        },
+        {
             "matchManagers": ["gradle-wrapper"],
             "enabled": true,
             "rangeStrategy": "bump"
