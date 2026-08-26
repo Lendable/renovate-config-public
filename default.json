@@ -66,6 +66,19 @@
             "rangeStrategy": "bump"
         },
         {
+            "description": "Pin Dockerfile base images by digest",
+            "matchManagers": ["dockerfile"],
+            "matchDatasources": ["docker"],
+            "pinDigests": true
+        },
+        {
+            "description": "Keep the legacy docker-base-images repository out of digest pinning",
+            "matchRepositories": ["Lendable/docker-base-images"],
+            "matchManagers": ["dockerfile"],
+            "matchDatasources": ["docker"],
+            "pinDigests": false
+        },
+        {
             "matchDatasources": ["docker"],
             "matchDepNames": ["public.ecr.aws/**", "*.dkr.ecr.*.amazonaws.com/**"],
             "enabled": true,
