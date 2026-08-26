@@ -66,6 +66,12 @@
             "rangeStrategy": "bump"
         },
         {
+            "description": "Pin Dockerfile base images by digest",
+            "matchManagers": ["dockerfile"],
+            "matchDatasources": ["docker"],
+            "pinDigests": true
+        },
+        {
             "matchDatasources": ["docker"],
             "matchDepNames": ["public.ecr.aws/**", "*.dkr.ecr.*.amazonaws.com/**"],
             "enabled": true,
