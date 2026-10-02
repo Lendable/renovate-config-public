@@ -197,14 +197,8 @@
             "minimumReleaseAge": "0"
         },
         {
-            "matchDepTypes": ["action"],
+            "matchDepTypes": ["action", "workflow"],
             "matchPackagePatterns": ["lendable/*", "Lendable/*"],
-            "pinDigests": false
-        },
-        {
-            "matchManagers": ["github-actions"],
-            "matchDepTypes": ["workflow"],
-            "matchPackageNames": ["Lendable/idp-cd-workflows"],
             "pinDigests": false
         },
         {
