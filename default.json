@@ -203,6 +203,12 @@
         },
         {
             "matchManagers": ["github-actions"],
+            "matchDepTypes": ["workflow"],
+            "matchPackageNames": ["Lendable/idp-cd-workflows"],
+            "pinDigests": false
+        },
+        {
+            "matchManagers": ["github-actions"],
             "matchPackageNames": ["gradle/actions"],
             "matchUpdateTypes": ["major"],
             "enabled": false
