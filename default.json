@@ -197,7 +197,7 @@
             "minimumReleaseAge": "0"
         },
         {
-            "matchDepTypes": ["action"],
+            "matchDepTypes": ["action", "workflow"],
             "matchPackagePatterns": ["lendable/*", "Lendable/*"],
             "pinDigests": false
         },
