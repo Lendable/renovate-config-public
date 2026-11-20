@@ -1,0 +1,19 @@
+default.json
+  s_61e05a20cc1d61::t_a96068886dda85 249-250
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "48a489122facd4d9db6dfc6d5c67ce5ca1e9c751",
+  "prompts": {},
+  "sessions": {
+    "s_61e05a20cc1d61": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3a57d6e8-4dec-4a39-8131-11ca32d71eb6",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Marcin Michalski <evulmastah@gmail.com>"
+    }
+  }
+}
