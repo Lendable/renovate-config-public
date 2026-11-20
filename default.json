@@ -52,6 +52,18 @@
             ],
             "depNameTemplate": "datadog/dd-trace-php",
             "datasourceTemplate": "github-releases"
+        },
+        {
+            "description": "Update the pinned install-php-extensions release and the SHA-512 check on the next line. The datasource hashes the release asset to get the new checksum.",
+            "customType": "regex",
+            "fileMatch": [
+                "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "docker-php-extension-installer\\/releases\\/download\\/(?<currentValue>\\d+\\.\\d+\\.\\d+)\\/install-php-extensions[^\\n]*\\n\\s*echo\\s+[\"'](?<currentDigest>[a-f0-9]{128})\\s"
+            ],
+            "depNameTemplate": "mlocati/docker-php-extension-installer",
+            "datasourceTemplate": "github-release-attachments"
         }
     ],
     "packageRules": [
@@ -230,6 +242,11 @@
             "matchDepNames": ["composer/composer"],
             "enabled": true,
             "rangeStrategy": "bump"
+        },
+        {
+            "matchDatasources": ["github-release-attachments"],
+            "matchDepNames": ["mlocati/docker-php-extension-installer"],
+            "enabled": true
         },
         {
             "matchDatasources": ["docker"],
