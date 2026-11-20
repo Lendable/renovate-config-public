@@ -246,7 +246,8 @@
         {
             "matchDatasources": ["github-release-attachments"],
             "matchDepNames": ["mlocati/docker-php-extension-installer"],
-            "enabled": true
+            "enabled": true,
+            "rangeStrategy": "bump"
         },
         {
             "matchDatasources": ["docker"],
